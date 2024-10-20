@@ -26,12 +26,12 @@ Before you begin, ensure you have the following installed:
    git clone https://github.com/LetsCodeWithIbrahim/MobileAutomation.git
 
 
-**Install dependencies:**
+### Install dependencies
 
 npm install          # For JavaScript/Node.js projects
 mvn clean install    # For Maven-based projects
 
-**Configure device capabilities:**
+### Configure device capabilities:
 
 Update the desired capabilities in the Base Class for your target device:
 
@@ -43,7 +43,7 @@ Update the desired capabilities in the Base Class for your target device:
   "appActivity": "com.example.myapp.MainActivity"
 }
 
-**Project Structure**
+## Project Structure
 
 mobile-automation/CudaAT/
 │
@@ -58,3 +58,7 @@ mobile-automation/CudaAT/
 ├── pom.xml                 # Dependency management (if using Maven)
 ├── README.md               # Project documentation
 └── .gitignore              # Ignored files for version control
+
+
+
+
