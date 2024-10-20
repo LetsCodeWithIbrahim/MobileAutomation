@@ -1,7 +1,7 @@
 # Mobile Automation Project
 
 ## Overview
-This project focuses on automating mobile application testing for Android using [Appium](https://appium.io/) (or any other tool you're using). efore the Android tests are executed, Cypress tests are run to ensure that the web application is functioning as expected.
+This project focuses on automating mobile application testing for Android using [Appium](https://appium.io/) (or any other tool you're using). Before the Android tests are executed, Cypress tests are run to ensure that the web application is functioning as expected.
 The implementation details for this orchestration are included in the test orchestration file. This setup enables comprehensive testing of both mobile and web applications through automated scripts, improving efficiency and coverage in the QA process.
 
 ## Prerequisites
