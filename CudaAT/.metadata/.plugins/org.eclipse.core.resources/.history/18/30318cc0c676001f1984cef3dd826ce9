@@ -1,0 +1,119 @@
+package tests;
+
+import java.io.IOException;
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
+
+import fixtures.DriverData;
+import fixtures.OdometerData;
+import fixtures.TestOrchestration;
+import io.appium.java_client.AppiumDriver;
+import pages.MyRoutePage;
+
+public class MyRouteTest extends BaseClass {
+
+	@BeforeSuite
+	public void setupSuite() throws InterruptedException {
+		try {
+			if (TestOrchestration.readResults() != null) {
+			} else {
+				throw new RuntimeException("Cypress tests failed. Cannot proceed with Appium tests.");
+			}
+		} catch (IOException e) {
+			throw new RuntimeException("Failed to run Cypress tests or read results.", e);
+		}
+	}
+
+	@Test
+	public void testMyRouteInfo() throws IOException, InterruptedException {
+		setupSuite();
+		LoginTest loginTest = new LoginTest();
+		loginTest.login();
+		String expectedText = TestOrchestration.getForwardRefNumber();
+		MyRoutePage myRoutePage = new MyRoutePage(driver);
+
+		// Verify the route info
+		myRoutePage.verifyMyRouteInfo(expectedText);
+
+		// Click the Start Route button
+		myRoutePage.clickStartRouteButton();
+
+		OdometerData data = OdometerData.readFromJson();
+//		myRoutePage.inputInitialOdometerReading(data.getInitialtOdometerReading());
+//
+//		myRoutePage.submitInitialOdometerReading();
+		boolean isEditTextVisible = findEditTextElement(driver);
+		if (isEditTextVisible) {
+            System.out.println("FOUND");
+			myRoutePage.inputInitialOdometerReading(data.getInitialtOdometerReading());
+		    myRoutePage.submitInitialOdometerReading();
+		    
+        } else {
+            System.out.println("NOT FOUND!");
+			
+        }
+
+		Thread.sleep(5000);
+		myRoutePage.startedRoutesScreen();
+		Thread.sleep(3000);
+		myRoutePage.swipeUpToCompleteRoute();
+		myRoutePage.clickOnCompleteShipment();
+		myRoutePage.clickOnYesButton();
+		Thread.sleep(1500);
+		myRoutePage.clickNextButtonOnFirstScreen();
+		myRoutePage.clickNextButtonOnSecondScreen();
+		myRoutePage.addFirstFreightImage();
+		myRoutePage.clickToTakePicture();
+		myRoutePage.clickToSavePicture();
+		myRoutePage.saveCroppedImage();
+		Thread.sleep(2000);
+		myRoutePage.clickOnTakePodImageCamIcon();
+		myRoutePage.clickToTakePodImage();
+		myRoutePage.clickToSavePodImage();
+		myRoutePage.saveCroppedPodImage();
+		myRoutePage.clickNextButtonOnThirdScreen();
+		Thread.sleep(1500);
+		DriverData driverData = DriverData.readFromJson();
+		myRoutePage.FirstName(driverData.getFirstName());
+		myRoutePage.clickOnSubmitButton();
+		Thread.sleep(30000);
+	}
+
+	public boolean findEditTextElement(AppiumDriver driver){
+
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(5000)); // Adjust timeout as needed
+
+		try {
+		    WebElement editText = wait.until(
+		        ExpectedConditions.presenceOfElementLocated(By.className("android.widget.EditText"))
+		    );
+		    System.out.println("Found EditText field");
+		    if (editText != null) {
+		    return true;
+		    }
+		    else {
+				return false;
+			}
+
+		    // Other actions with the EditText field
+		} catch (TimeoutException e) {
+		    System.out.println("EditText field NOT FOUND!");
+		    return false;
+		    // Handle the scenario where the element is not present
+		} catch (NoSuchElementException e) {
+		    System.out.println("Element not found: " + e.getMessage());
+		    return false;
+		    // Handle the case where the element is not found
+		}
+
+		}
+
+}

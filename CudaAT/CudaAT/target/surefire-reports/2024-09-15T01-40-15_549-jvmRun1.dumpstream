@@ -1,0 +1,111 @@
+# Created at 2024-09-15T01:40:25.970
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '> testautomation@1.0.0 cypress:test'.
+
+# Created at 2024-09-15T01:40:42.277
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '> cypress run --spec 'cypress/e2e/tests/createRoutingForAndroidApp.cy.js''.
+
+# Created at 2024-09-15T01:40:42.281
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '===================================================================================================='.
+
+# Created at 2024-09-15T01:40:42.282
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  (Run Starting)'.
+
+# Created at 2024-09-15T01:40:42.286
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐'.
+
+# Created at 2024-09-15T01:40:42.289
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  │ Cypress:        13.14.2                                                                        │'.
+
+# Created at 2024-09-15T01:40:42.290
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  │ Browser:        Electron 118 (headless)                                                        │'.
+
+# Created at 2024-09-15T01:40:42.292
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  │ Node Version:   v20.15.1 (C:\Program Files\nodejs\node.exe)                                    │'.
+
+# Created at 2024-09-15T01:40:42.294
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  │ Specs:          1 found (createRoutingForAndroidApp.cy.js)                                     │'.
+
+# Created at 2024-09-15T01:40:42.295
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  │ Searched:       C:\TestAutomation\cypress\e2e\tests\createRoutingForAndroidApp.cy.js           │'.
+
+# Created at 2024-09-15T01:40:42.297
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  │ Experiments:    experimentalRunAllSpecs=true                                                   │'.
+
+# Created at 2024-09-15T01:40:42.300
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  └────────────────────────────────────────────────────────────────────────────────────────────────┘'.
+
+# Created at 2024-09-15T01:40:42.303
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '────────────────────────────────────────────────────────────────────────────────────────────────────'.
+
+# Created at 2024-09-15T01:43:17.264
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  Running:  createRoutingForAndroidApp.cy.js                                                (1 of 1)'.
+
+# Created at 2024-09-15T01:43:17.279
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  Shipment Tests'.
+
+# Created at 2024-09-15T01:43:17.674
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '    √ Should show newly created shipment under routing screen (143132ms)'.
+
+# Created at 2024-09-15T01:43:17.676
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  1 passing (2m)'.
+
+# Created at 2024-09-15T01:43:17.724
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[mochawesome] Report JSON saved to C:\TestAutomation\cypress\reports\mochawesome\.jsons\mochawesome_007.json'.
+
+# Created at 2024-09-15T01:43:17.726
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  (Results)'.
+
+# Created at 2024-09-15T01:43:17.729
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐'.
+
+# Created at 2024-09-15T01:43:17.733
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  │ Tests:        1                                                                                │'.
+
+# Created at 2024-09-15T01:43:17.735
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  │ Passing:      1                                                                                │'.
+
+# Created at 2024-09-15T01:43:17.741
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  │ Failing:      0                                                                                │'.
+
+# Created at 2024-09-15T01:43:17.783
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  │ Pending:      0                                                                                │'.
+
+# Created at 2024-09-15T01:43:17.788
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  │ Skipped:      0                                                                                │'.
+
+# Created at 2024-09-15T01:43:17.790
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  │ Screenshots:  0                                                                                │'.
+
+# Created at 2024-09-15T01:43:17.792
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  │ Video:        false                                                                            │'.
+
+# Created at 2024-09-15T01:43:17.797
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  │ Duration:     2 minutes, 28 seconds                                                            │'.
+
+# Created at 2024-09-15T01:43:17.804
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  │ Spec Ran:     createRoutingForAndroidApp.cy.js                                                 │'.
+
+# Created at 2024-09-15T01:43:18.055
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  └────────────────────────────────────────────────────────────────────────────────────────────────┘'.
+
+# Created at 2024-09-15T01:43:18.076
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '===================================================================================================='.
+
+# Created at 2024-09-15T01:43:18.078
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  (Run Finished)'.
+
+# Created at 2024-09-15T01:43:18.080
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '       Spec                                              Tests  Passing  Failing  Pending  Skipped  '.
+
+# Created at 2024-09-15T01:43:18.083
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐'.
+
+# Created at 2024-09-15T01:43:18.086
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  │ √  createRoutingForAndroidApp.cy.js         02:28        1        1        -        -        - │'.
+
+# Created at 2024-09-15T01:43:18.091
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  └────────────────────────────────────────────────────────────────────────────────────────────────┘'.
+
+# Created at 2024-09-15T01:43:20.091
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '    √  All specs passed!                        02:28        1        1        -        -        -  '.
+

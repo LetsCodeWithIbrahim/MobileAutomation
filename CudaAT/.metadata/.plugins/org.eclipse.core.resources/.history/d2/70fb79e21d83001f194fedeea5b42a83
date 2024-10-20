@@ -1,0 +1,36 @@
+package tests;
+
+import java.io.IOException;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
+
+import fixtures.DriverData;
+import fixtures.TestOrchestration;
+import pages.MyRoutePage;
+
+public class CompletePickupShipmentTest extends BaseClass {
+
+    @BeforeSuite
+    public void setupSuite() throws InterruptedException {
+        try {
+            // Run cypress:pickuptest for CompletePickupShipmentTest
+            if (TestOrchestration.runCypressTests("npm run cypress:pickuptest")) {
+                TestOrchestration.readResults();
+            } else {
+                throw new RuntimeException("Cypress tests failed. Cannot proceed with Appium tests.");
+            }
+        } catch (IOException e) {
+            throw new RuntimeException("Failed to run Cypress tests or read results.", e);
+        }
+    }
+
+    @Test
+    public void testPickupShipment() throws IOException, InterruptedException {
+        LoginTest loginTest = new LoginTest();
+        loginTest.login();
+        String expectedText = TestOrchestration.getForwardRefNumber();
+        MyRoutePage myRoutePage = new MyRoutePage(driver);
+
+        // Continue with the test steps for CompletePickupShipmentTest...
+    }
+}
