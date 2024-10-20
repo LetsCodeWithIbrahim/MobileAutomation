@@ -18,13 +18,13 @@ public class BaseClass {
 
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 
-		capabilities.setCapability("deviceName", "CudaAT");
+		capabilities.setCapability("deviceName", "MyVirtualDevice");
 		capabilities.setCapability("udid", "emulator-5554");
 		capabilities.setCapability("platformName", "Android");
 		capabilities.setCapability("platformVersion", "13");
 		capabilities.setCapability("automationName", "UiAutomator2");
-		capabilities.setCapability("appPackage", "com.eeldatasystems.cudaexpo");
-		capabilities.setCapability("appActivity", "com.eeldatasystems.cudaexpo.MainActivity");
+		capabilities.setCapability("appPackage", "com.example.myapp"); //Specify your Android app package 
+		capabilities.setCapability("appActivity", "com.example.myapp.MainActivity"); //Specify your Android app activity
 		capabilities.setCapability("autoGrantPermissions", true);
 		capabilities.setCapability("printPageSourceOnFindFailure", true);
 
